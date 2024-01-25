@@ -25,7 +25,17 @@ public class Tabuleiro {
 	public void imprimirTabuleiro() {
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
-				System.out.print(tabuleiro[i][j]);
+				System.out.print(tabuleiro[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	public void imprimirTabuleiroLimpo() {
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 8; j++) {
+				if (tabuleiro[i][j] == 'R') System.out.print(tabuleiro[i][j] + " ");
+				else System.out.print(". ");
 			}
 			System.out.println();
 		}
